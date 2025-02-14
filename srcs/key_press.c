@@ -6,7 +6,7 @@
 /*   By: bozil <bozil@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 10:47:43 by bozil             #+#    #+#             */
-/*   Updated: 2025/02/14 11:27:32 by bozil            ###   ########.fr       */
+/*   Updated: 2025/02/14 11:56:00 by bozil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static void move_player(t_game *game, int new_x, int new_y)
 
 int key_press(int key, t_game *game)
 {
-    if (key == KEY_ESC)
+    if (key == KEY_ESC || key == CLOSE_BTN) 
     {
         exit_game(game);
         exit(0);

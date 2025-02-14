@@ -6,11 +6,17 @@
 /*   By: bozil <bozil@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 10:30:25 by bozil             #+#    #+#             */
-/*   Updated: 2025/02/14 11:27:57 by bozil            ###   ########.fr       */
+/*   Updated: 2025/02/14 12:03:56 by bozil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/so_long.h"
+
+int	close_window(t_game *game)
+{
+	exit_game(game);
+	return (0);
+}
 
 void find_player_start(t_game *game)
 {
@@ -56,5 +62,6 @@ void start_game(t_game *game)
     load_textures(game);
     render_map(game);
     mlx_key_hook(game->win, key_press, game);
+    mlx_hook(game->win, 17, 0, close_window, game);
     mlx_loop(game->mlx);
 }
