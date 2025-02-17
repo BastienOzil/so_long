@@ -6,7 +6,7 @@
 /*   By: bozil <bozil@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 13:43:22 by bozil             #+#    #+#             */
-/*   Updated: 2025/02/14 11:35:50 by bozil            ###   ########.fr       */
+/*   Updated: 2025/02/17 13:01:43 by bozil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ int     parse_map(const char *file, t_map *map);
 int	    is_map_possible(t_game *game);
 void    start_game(t_game *game);
 void    render_map(t_game *game);
+void	render_map2(t_game *game);
 void    free_map(t_map *map);
 void    load_textures(t_game *game);
 void    exit_game(t_game *game);
