@@ -17,7 +17,7 @@ PRINTF_DIR = utils/ft_printf
 GNL_DIR = utils/get_next_line
 
 SRCS = $(SRC_DIR)/so_long.c $(SRC_DIR)/parse_map.c $(SRC_DIR)/check_map.c $(SRC_DIR)/render_map.c \
-	   $(SRC_DIR)/is_map_possible.c \
+	   $(SRC_DIR)/is_map_possible.c $(SRC_DIR)/map_validator.c\
        $(SRC_DIR)/key_press.c $(SRC_DIR)/start_game.c $(SRC_DIR)/load_textures.c \
        $(SRC_DIR)/exit_game.c  $(SRC_DIR)/free_map.c \
 
