@@ -6,7 +6,7 @@
 /*   By: bozil <bozil@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 11:07:20 by bozil             #+#    #+#             */
-/*   Updated: 2025/02/12 10:43:51 by bozil            ###   ########.fr       */
+/*   Updated: 2025/02/18 11:21:40 by bozil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static char	*extract_line(char **res)
 
 	if (!*res)
 		return (NULL);
-	newline = ft_strchr(*res, '\n');
+	newline = ft_strchr2(*res, '\n');
 	if (!newline)
 	{
 		line = *res;
@@ -56,7 +56,7 @@ static char	*read_buffer(int fd, char *res)
 		}
 		buffer[read_bytes] = '\0';
 		res = ft_strjoin2(res, buffer);
-		if (ft_strchr(buffer, '\n'))
+		if (ft_strchr2(buffer, '\n'))
 			break ;
 	}
 	free(buffer);

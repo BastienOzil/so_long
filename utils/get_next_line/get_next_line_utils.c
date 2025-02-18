@@ -6,7 +6,7 @@
 /*   By: bozil <bozil@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 11:07:24 by bozil             #+#    #+#             */
-/*   Updated: 2025/02/12 10:45:47 by bozil            ###   ########.fr       */
+/*   Updated: 2025/02/18 11:21:57 by bozil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strjoin2(char *s1, char *s2)
 }
 
 /* Find first occurrence of character */
-char	*ft_strchr(const char *s, int c)
+char	*ft_strchr2(const char *s, int c)
 {
 	char	*str;
 

@@ -6,7 +6,7 @@
 /*   By: bozil <bozil@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 13:40:32 by bozil             #+#    #+#             */
-/*   Updated: 2025/02/17 13:47:11 by bozil            ###   ########.fr       */
+/*   Updated: 2025/02/18 11:27:15 by bozil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	main(int argc, char **argv)
 
 	if (argc != 2)
 	{
-		ft_printf("Usage: ./so_long maps/name_map.ber\n");
+		ft_printf("Usage: ./so_long maps/map_name.ber\n");
 		return (1);
 	}
 	if (!parse_map(argv[1], &game.map))

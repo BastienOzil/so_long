@@ -6,7 +6,7 @@
 /*   By: bozil <bozil@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 10:25:36 by bozil             #+#    #+#             */
-/*   Updated: 2025/02/17 11:04:39 by bozil            ###   ########.fr       */
+/*   Updated: 2025/02/18 11:30:38 by bozil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ static void	find_player_start(t_map *map)
 		}
 		y++;
 	}
-	ft_printf("Error: No starting position 'P' found on the map.\n");
+	ft_printf("Error:\nNo starting position 'P' found on the map.\n");
 	exit(1);
 }
 
@@ -99,7 +99,7 @@ int	is_map_possible(t_game *game)
 	visited = malloc(game->map.width * game->map.height * sizeof(int));
 	if (!visited)
 	{
-		ft_printf("Error: Memory allocation failed.\n");
+		ft_printf("Error:\nMemory allocation failed.\n");
 		exit(1);
 	}
 	reset_visited(visited, &game->map);
