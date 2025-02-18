@@ -6,7 +6,7 @@
 /*   By: bozil <bozil@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 13:43:22 by bozil             #+#    #+#             */
-/*   Updated: 2025/02/17 13:01:43 by bozil            ###   ########.fr       */
+/*   Updated: 2025/02/18 11:20:10 by bozil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,8 @@ int     key_press(int key, t_game *game);
 int     check_map(t_map *map);
 int     parse_map(const char *file, t_map *map);
 int	    is_map_possible(t_game *game);
+int     is_surrounded_by_walls(t_map *map);
+int	    is_rectangular(t_map *map);
 void    start_game(t_game *game);
 void    render_map(t_game *game);
 void	render_map2(t_game *game);
