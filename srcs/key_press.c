@@ -6,7 +6,7 @@
 /*   By: bozil <bozil@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 10:47:43 by bozil             #+#    #+#             */
-/*   Updated: 2025/02/17 11:17:57 by bozil            ###   ########.fr       */
+/*   Updated: 2025/02/24 11:34:12 by bozil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static void	move_player(t_game *game, int new_x, int new_y)
 		game->map.collectibles--;
 	if (game->map.grid[new_y][new_x] == 'E' && game->map.collectibles == 0)
 	{
-		ft_printf("Congratulations! You've won in %d moves!\n", game->moves);
+		ft_printf("Congratulations!\nYou've won in %d moves!\n", game->moves);
 		exit_game(game);
 		exit(0);
 	}
