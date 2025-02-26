@@ -34,6 +34,7 @@ static void	move_player(t_game *game, int new_x, int new_y)
 		game->map.collectibles--;
 	if (game->map.grid[new_y][new_x] == 'E' && game->map.collectibles == 0)
 	{
+		game->moves++;
 		ft_printf("Congratulations!\nYou've won in %d moves!\n", game->moves);
 		exit_game(game);
 		exit(0);
