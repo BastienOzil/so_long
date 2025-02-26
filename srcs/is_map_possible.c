@@ -34,6 +34,8 @@ static void	fill_cell(int *visited, t_map *map, int x, int y)
 {
 	if (x < 0 || y < 0 || x >= map->width || y >= map->height)
 		return ;
+	if (map->grid[y][x] == 'E')
+		visited[y * map->width + x] = 1;
 	if (map->grid[y][x] == '1' || visited[y * map->width + x])
 		return ;
 	visited[y * map->width + x] = 1;

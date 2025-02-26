@@ -6,7 +6,7 @@
 /*   By: bozil <bozil@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 11:16:38 by bozil             #+#    #+#             */
-/*   Updated: 2025/02/25 10:40:37 by bozil            ###   ########.fr       */
+/*   Updated: 2025/02/26 10:52:30 by bozil            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	check_top_and_bottom(t_map *map)
 {
 	if (!map->grid || !map->grid[0])
-        return (0);
+		return (0);
 	if (ft_strchr(map->grid[0], '0') || ft_strchr(map->grid[map->height - 1],
 			'0'))
 		return (0);
